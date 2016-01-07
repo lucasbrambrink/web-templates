@@ -11,7 +11,7 @@ $(document).ready(function() {
         $this.toggleClass('active');
         $this.find('.menu-item').slideToggle(toggleDuration)
         setTimeout(function () {
-           $this.children('span').html(symbol);
+           $this.children('span').first().html(symbol);
         }, timeOutDuration);
     });
 

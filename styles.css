@@ -15,14 +15,35 @@ header h3 {
 }
 #profile {
   border: 3px solid #191919;
+  width: 100%;
   max-width: 300px;
   height: auto;
 }
 .info-menu {
   list-style-type: none;
+  font-size: 20px;
+}
+.info-menu media(min-width: 400px) {
   font-size: 30px;
+}
+.info-menu li {
   cursor: pointer;
 }
 .info-menu .menu-item {
   display: none;
+  padding: 5% 0;
+}
+.info-menu .menu-title {
+  padding-left: 10px;
+}
+.info-menu .menu-title:hover {
+  color: #666666;
+}
+h1,
+h3 {
+  font-size: 80%;
+}
+h1 media(min-width: 400px),
+h3 media(min-width: 400px) {
+  font-size: 100%;
 }

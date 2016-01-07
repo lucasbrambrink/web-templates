@@ -1,5 +1,6 @@
 @white: #fff;
 @black: #191919;
+@grey-backdrop: rgba(230, 230, 230, 0.7);
 
 body {
   background: url('background.gif') no-repeat;
@@ -7,7 +8,7 @@ body {
 
 .container {
   color: @black;
-  background-color: rgba(230, 230, 230, 0.7);
+  background-color: @grey-backdrop;
   min-height: 700px;
   padding-bottom: 5%;
 }
@@ -15,9 +16,7 @@ body {
 header {
   .row {
     padding: 5%;
-
   }
-
   h3 {
     padding-left: 30px;
   }
@@ -25,18 +24,36 @@ header {
 
 #profile {
   border: 3px solid @black;
+  width: 100%;
   max-width: 300px;
   height: auto;
 }
 
 .info-menu {
   list-style-type: none;
-  font-size: 30px;
-  cursor: pointer;
+  font-size: 20px;
+  media(min-width: 400px) {
+    font-size: 30px;
+  }
+  li {
+    cursor: pointer;
+  }
 
   .menu-item {
     display: none;
+    padding: 5% 0;
   }
-
+  .menu-title {
+    padding-left: 10px;
+    &:hover {
+      color: lighten(@black, 30%);
+    }
+  }
 }
 
+h1, h3 {
+  font-size: 80%;
+  media(min-width: 400px) {
+    font-size: 100%;
+  }
+}

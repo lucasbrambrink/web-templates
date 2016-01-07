@@ -1,0 +1,42 @@
+@white: #fff;
+@black: #191919;
+
+body {
+  background: url('background.gif') no-repeat;
+}
+
+.container {
+  color: @black;
+  background-color: rgba(230, 230, 230, 0.7);
+  min-height: 700px;
+  padding-bottom: 5%;
+}
+
+header {
+  .row {
+    padding: 5%;
+
+  }
+
+  h3 {
+    padding-left: 30px;
+  }
+}
+
+#profile {
+  border: 3px solid @black;
+  max-width: 300px;
+  height: auto;
+}
+
+.info-menu {
+  list-style-type: none;
+  font-size: 30px;
+  cursor: pointer;
+
+  .menu-item {
+    display: none;
+  }
+
+}
+

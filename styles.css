@@ -1,0 +1,28 @@
+body {
+  background: url('background.gif') no-repeat;
+}
+.container {
+  color: #191919;
+  background-color: rgba(230, 230, 230, 0.7);
+  min-height: 700px;
+  padding-bottom: 5%;
+}
+header .row {
+  padding: 5%;
+}
+header h3 {
+  padding-left: 30px;
+}
+#profile {
+  border: 3px solid #191919;
+  max-width: 300px;
+  height: auto;
+}
+.info-menu {
+  list-style-type: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+.info-menu .menu-item {
+  display: none;
+}

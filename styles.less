@@ -32,7 +32,7 @@ header {
 .info-menu {
   list-style-type: none;
   font-size: 20px;
-  media(min-width: 400px) {
+  @media(min-width: 400px) {
     font-size: 30px;
   }
   li {
@@ -51,9 +51,16 @@ header {
   }
 }
 
-h1, h3 {
-  font-size: 80%;
-  media(min-width: 400px) {
-    font-size: 100%;
+h1 {
+  font-size: 30px;
+  @media(min-width: 400px) {
+    font-size: 36px;
+  }
+}
+
+h3 {
+  font-size: 19px;
+  @media(min-width: 400px) {
+    font-size: 24px;
   }
 }

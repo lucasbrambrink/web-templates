@@ -23,8 +23,10 @@ header h3 {
   list-style-type: none;
   font-size: 20px;
 }
-.info-menu media(min-width: 400px) {
-  font-size: 30px;
+@media (min-width: 400px) {
+  .info-menu {
+    font-size: 30px;
+  }
 }
 .info-menu li {
   cursor: pointer;
@@ -39,11 +41,19 @@ header h3 {
 .info-menu .menu-title:hover {
   color: #666666;
 }
-h1,
-h3 {
-  font-size: 80%;
+h1 {
+  font-size: 30px;
 }
-h1 media(min-width: 400px),
-h3 media(min-width: 400px) {
-  font-size: 100%;
+@media (min-width: 400px) {
+  h1 {
+    font-size: 36px;
+  }
+}
+h3 {
+  font-size: 19px;
+}
+@media (min-width: 400px) {
+  h3 {
+    font-size: 24px;
+  }
 }

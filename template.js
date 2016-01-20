@@ -5,7 +5,7 @@ $(document).ready(function() {
 
         var $this = $(this);
         var isActive = $this.hasClass('active');
-        var symbol = isActive ? '-' : '+';
+        var symbol = isActive ? '+' : '-';
         var toggleDuration = 300;
         var timeOutDuration = isActive ? toggleDuration : 0;
 

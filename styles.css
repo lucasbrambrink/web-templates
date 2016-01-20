@@ -1,9 +1,9 @@
 body {
-  background: url('background.gif') no-repeat;
+  background: url('background_mirrored.jpg');
 }
 .container {
   color: #191919;
-  background-color: rgba(230, 230, 230, 0.7);
+  background-color: rgba(230, 230, 230, 0.85);
   min-height: 700px;
   padding-bottom: 5%;
 }
@@ -43,6 +43,7 @@ header h3 {
 }
 h1 {
   font-size: 30px;
+  font-family: Avenir;
 }
 @media (min-width: 400px) {
   h1 {
@@ -51,9 +52,24 @@ h1 {
 }
 h3 {
   font-size: 19px;
+  font-family: Avenir;
 }
 @media (min-width: 400px) {
   h3 {
     font-size: 24px;
   }
 }
+
+p {
+  font-size: 18px;
+  font-family: Avenir;
+  text-align: justify;
+  padding-right: 40px;
+  padding-left: 45px;
+}
+@media (min-width: 400px) {
+  p {
+    font-size: 20px;
+  }
+}
+
